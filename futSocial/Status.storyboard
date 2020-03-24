@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Estado-->
+        <scene sceneID="Ram-PK-e91">
+            <objects>
+                <viewController id="gXi-4S-U3F" customClass="StatusViewController" customModule="futSocial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kdn-Uv-Gay">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="qyn-vu-nuZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Estado" id="E4b-ZG-42J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X1D-Pg-5QJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3480.8000000000002" y="760.56971514242889"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nuf-bV-Xmf">
+            <objects>
+                <navigationController storyboardIdentifier="statusid" automaticallyAdjustsScrollViewInsets="NO" id="Y8h-W8-dtq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="balon" id="Glj-6s-uMp"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7Vr-Nh-fw4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gXi-4S-U3F" kind="relationship" relationship="rootViewController" id="HgP-AY-XJZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ebF-uA-DBD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2541.5999999999999" y="760.56971514242889"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="balon" width="22.5" height="22.5"/>
+    </resources>
+</document>
